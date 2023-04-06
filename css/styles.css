@@ -111,6 +111,7 @@ h3 {
   }
   .badge--small {
     font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 
@@ -132,6 +133,7 @@ h3 {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  margin-bottom: 5rem;
 }
 
 .list--tick .list__item {
@@ -256,4 +258,68 @@ h3 {
 .input-group button {
   font-size: 1.2rem;
   margin: 0;
+}
+
+/* Plan Card */
+.card {
+  width: 90%;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 10px #f3f3f3;
+  font-size: 2.4rem;
+}
+.card--primary .crad__header {
+  background-color: var(--color-primary);
+}
+.card--secondary .crad__header {
+  background-color: var(--color-secondary);
+}
+.card--secondary .badge--secondary {
+  background-color: #02cdf1;
+}
+.crad__header {
+  color: #fff;
+  padding: 2rem 3rem;
+}
+.card__body {
+  padding: 2rem 3rem;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+.plan__title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  color: #fff;
+}
+.plan__billing-cycle {
+  font-weight: 300;
+  opacity: 80%;
+  margin-right: 1rem;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan__discription {
+  font-size: 2rem;
+  word-spacing: 2px;
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    font-size: 1.8rem;
+  }
+  .plan__title {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__discription {
+    font-size: 1.7rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
 }
