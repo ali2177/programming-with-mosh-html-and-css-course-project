@@ -154,6 +154,11 @@ h3 {
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
 }
@@ -166,6 +171,11 @@ h3 {
   height: 64px;
   border-radius: 100%;
   background-color: #f3f9fa;
+}
+
+.icon-container--accent {
+  background-color: var(--color-accent);
+  fill: #fff;
 }
 
 /* Button */
@@ -358,6 +368,10 @@ h3 {
   font-style: italic;
   color: var(--color-body-darker);
   line-height: 1.3;
+  margin-bottom: 3rem;
+}
+.quote__text {
+  margin-bottom: 2rem;
 }
 .quote__text::before {
   content: open-quote;
@@ -405,5 +419,52 @@ h3 {
 @media screen and (min-width: 1024px) {
   .grid--col-3 {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Testimonial */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__img > img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.testimonial .grid {
+  justify-items: center;
+}
+.testimonial__img {
+  position: relative;
+}
+.testimonial__img > .icon-container {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 3rem;
+  right: -4rem;
+}
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote .media__title {
+    font-size: 2.4rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
+    margin-top: 5rem;
+  }
+  .testimonial__img > img {
+    margin-bottom: 0;
+  }
+  .testimonial .grid {
+    justify-items: stretch;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .testimonial__img > .icon-container {
+    width: 64px;
+    height: 64px;
+    right: -3rem;
   }
 }
