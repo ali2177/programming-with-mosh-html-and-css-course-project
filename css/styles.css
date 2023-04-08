@@ -165,8 +165,12 @@ h3 {
   fill: var(--color-primary);
 }
 
-.icon--white {
+.icon--black {
   fill: #00000078;
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon-container {
@@ -586,4 +590,56 @@ h3 {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.nav__list {
+  width: 100%;
+}
+
+.nav__item {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.2s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  transition: box-shadow 0.2s;
+}
+
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0px 0px 2px 2px #353535;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    width: auto;
+    max-height: 100vh;
+    opacity: 1;
+    display: flex;
+  }
+  .nav__item {
+    border: 0;
+  }
 }
