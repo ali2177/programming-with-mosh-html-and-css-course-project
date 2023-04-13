@@ -295,7 +295,6 @@ h3 {
 
 /* Plan Card */
 .card {
-  width: 90%;
   border-radius: 7px;
   /* overflow: hidden; */
   box-shadow: 0px 0px 20px 10px #f3f3f3;
@@ -310,6 +309,9 @@ h3 {
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
+.card--primary .badge--primary {
+  background-color: #1671e7;
+}
 .crad__header {
   color: #fff;
   padding: 2rem 3rem;
@@ -320,6 +322,9 @@ h3 {
   padding: 2rem 3rem;
   letter-spacing: 2px;
   line-height: 2;
+}
+.plan {
+  transition: transform 0.2s;
 }
 .plan__title {
   font-weight: 600;
@@ -340,6 +345,9 @@ h3 {
   word-spacing: 2px;
   display: block;
 }
+.plan--popular {
+  transform: scale(1.1);
+}
 .plan--popular .crad__header {
   position: relative;
 }
@@ -349,6 +357,13 @@ h3 {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -711,4 +726,13 @@ h3 {
   .domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Block Plan */
+.block--plan .grid {
+  gap: 4rem;
+}
+.block--plan .card {
+  max-width: 600px;
+  margin: 0 auto;
 }
