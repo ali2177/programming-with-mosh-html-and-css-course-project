@@ -195,7 +195,7 @@ h3 {
   border: 0;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
@@ -278,13 +278,13 @@ h3 {
 
 /* Input Group */
 .input-group {
-  width: 100%;
   border: 1px solid var(--color-border);
   border-radius: 30px;
   padding: 0.2rem;
   display: flex;
 }
 .input-group input {
+  width: 0;
   flex-grow: 1;
   border: 0;
 }
@@ -723,7 +723,7 @@ h3 {
 
 .domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 1.8rem;
