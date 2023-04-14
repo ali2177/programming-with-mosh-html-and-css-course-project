@@ -396,7 +396,7 @@ h3 {
 }
 .media__description {
   font-size: 2rem;
-  font-size: 400;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
