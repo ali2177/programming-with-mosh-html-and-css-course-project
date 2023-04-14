@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -91,7 +92,7 @@
     <!-- plan block -->
     <section class="block container block--plan">
       <div class="grid grid--col-3">
-        <div class="plan">
+        <div data-aos="flip-up"  class="plan">
           <article class="card card--secondary">
             <header class="crad__header">
               <h3 class="plan__title">Business Plus</h3>
@@ -111,7 +112,7 @@
             </div>
           </article>
         </div>
-        <div class="plan plan--popular">
+        <div data-aos="flip-up" data-aos-duration="1000" class="plan plan--popular">
           <article class="card card--primary">
             <header class="crad__header">
               <h3 class="plan__title">Business Plus</h3>
@@ -131,7 +132,7 @@
             </div>
           </article>
         </div>
-        <div class="plan">
+        <div data-aos="flip-up" data-aos-duration="2000" class="plan">
           <article class="card card--secondary">
             <header class="crad__header">
               <h3 class="plan__title">Business Plus</h3>
@@ -162,7 +163,7 @@
           placeat
         </p>
       </header>
-      <div class="features block">
+      <div data-aos="fade-right" data-aos-duration="1000" class="features block">
         <div class="container grid grid--col-2">
           <div class="features__content">
             <span class="icon-container">
@@ -193,7 +194,7 @@
           </picture>
         </div>
       </div>
-      <div class="features block features--reverse">
+      <div data-aos="fade-left" data-aos-duration="1000" class="features block features--reverse">
         <div class="container grid grid--col-2">
           <div class="features__content">
             <span class="icon-container">
@@ -224,7 +225,7 @@
           </picture>
         </div>
       </div>
-      <div class="features block">
+      <div data-aos="fade-right" data-aos-duration="1000" class="features block">
         <div class="container grid grid--col-2">
           <div class="features__content">
             <span class="icon-container">
@@ -255,7 +256,7 @@
           </picture>
         </div>
       </div>
-      <div class="features block features--reverse">
+      <div data-aos="fade-left" data-aos-duration="1000" class="features block features--reverse">
         <div class="container grid grid--col-2">
           <div class="features__content">
             <span class="icon-container">
@@ -360,7 +361,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse culpa
         </p>
       </header>
-      <div class="container">
+      <div data-aos="zoom-in" data-aos-duration="1000" class="container">
         <article class="card testimonial">
           <div class="grid grid--col-2">
             <div class="testimonial__img">
@@ -514,5 +515,9 @@
       </div>
     </footer>
     <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
